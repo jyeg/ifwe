@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://jashkenas.github.io/underscore/underscore-min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<script src="app.js"></script>
+	<meta charset="utf-8">
+	<title>JS Bin</title>
+</head>
+<body>
+<div class="container">
+	<h1>Foosballer</h1>
+
+	<!--<div class="pure-u-1-">-->
+		<form id="newGameForm" class="pure-form">
+			<legend>New Game</legend>
+			<p><label for="player1">Player 1:</label>
+				<input type="text" name="player1" required/>
+				<label for="score1">Score</label>
+				<input type="number" name="score1" class="score" min="0" required/></p>
+
+			VS.
+
+			<p><label for="player2">Player 2:</label>
+				<input type="text" name="player2" required/>
+				<label for="score2">Score</label>
+				<input type="number" name="score2" class="score" min="0" required/></p>
+			<input type="submit" class="pure-button"/>
+		</form>
+	<div class="gamesPlayed"></div>
+	<!--</div>-->
+	<!--<div class="pure-i-1-3">-->
+		<h2>Score Board</h2>
+		<ol class="leaderboard">
+		</ol>
+
+	<!--</div>-->
+</div>
+</body>
+</html>

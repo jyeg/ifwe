@@ -1,0 +1,62 @@
+html, body, #container {
+	height: 100%;
+	overflow: auto;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	background: #eee;
+}
+.container{
+	padding: 0;
+	width: 95%;
+	max-width: 400px;
+	margin: 20px auto;
+	vertical-align: middle;
+}
+
+#newGameForm{
+	margin: 20px 10px;
+}
+.score{
+	width:35px;
+}
+
+.leaderboard {
+	list-style: none;
+	padding: 0;
+	width: 95%;
+	max-width: 400px;
+	margin: 20px auto;
+	counter-reset: leaderboard;
+}
+
+.person {
+	line-height: 50px;
+	background: white;
+	margin: 1px 0;
+	padding: 0 10px;
+	border-radius: 1px;
+	box-shadow: 0 1px 0px rgba(0, 0, 0, 0.08);
+	counter-increment: leaderboard;
+}
+.person:odd {
+	box-shadow: 0 1px 0px rgba(0, 0, 0, 0.5);
+}
+.person:before {
+	content: "#" counter(leaderboard);
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	width: 40px;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.person-name,
+.person-avatar {
+	vertical-align: middle;
+}
+
+.person-name {
+	text-transform: capitalize;
+}
